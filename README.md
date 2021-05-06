@@ -9,4 +9,4 @@ It is currently too small to be worth uploading to maven central.
 
 Requirements
 ============
-Astronomy is designed to work with Java 15+. It needs preview-features enabled.
+Astronomy is designed to work with Java 16+.
