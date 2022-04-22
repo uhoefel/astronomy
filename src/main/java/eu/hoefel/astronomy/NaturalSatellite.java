@@ -7,11 +7,11 @@ package eu.hoefel.astronomy;
  */
 public interface NaturalSatellite {
 
-	/**
-	 * Gets the "parent" planet.
-	 * 
-	 * @return the "parent" planet, or {@link Planet#NONE NONE} if no parent planet
-	 *         exists.
-	 */
-	public Planet planet();
+    /**
+     * Gets the "parent" planet.
+     * 
+     * @return the "parent" planet, or {@link Planet#NONE NONE} if no parent planet
+     *         exists.
+     */
+    public Planet planet();
 }

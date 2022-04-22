@@ -11,31 +11,31 @@ import java.util.List;
  */
 public interface Planet {
 
-	/** Alias for "no planet". */
-	public static final Planet NONE = new Planet() {
-		@Override public List<Star> stars() { return List.of(); }
-		@Override public double mass() { return Double.NaN; }
-		@Override public boolean isMinor() { return false; }
-	};
+    /** Alias for "no planet". */
+    public static final Planet NONE = new Planet() {
+        @Override public List<Star> stars() { return List.of(); }
+        @Override public double mass() { return Double.NaN; }
+        @Override public boolean isMinor() { return false; }
+    };
 
-	/**
-	 * The {@link Star star(s)}, around which the planet revolves.
-	 * 
-	 * @return the "parent" stars
-	 */
-	public List<Star> stars();
+    /**
+     * The {@link Star star(s)}, around which the planet revolves.
+     * 
+     * @return the "parent" stars
+     */
+    public List<Star> stars();
 
-	/**
-	 * The approximate mass in kg.
-	 * 
-	 * @return the mass in kg
-	 */
-	public double mass();
+    /**
+     * The approximate mass in kg.
+     * 
+     * @return the mass in kg
+     */
+    public double mass();
 
-	/**
-	 * True if the planet is a minor planet.
-	 * 
-	 * @return true for minor planets
-	 */
-	public boolean isMinor();
+    /**
+     * True if the planet is a minor planet.
+     * 
+     * @return true for minor planets
+     */
+    public boolean isMinor();
 }

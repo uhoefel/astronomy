@@ -8,8 +8,5 @@
  * @author Udo Hoefel
  */
 module eu.hoefel.astronomy {
-	exports eu.hoefel.astronomy;
-
-	// ugh...
-	opens eu.hoefel.astronomy to org.junit.platform.commons;
+    exports eu.hoefel.astronomy;
 }
